@@ -1,38 +1,68 @@
-# Hi, I'm Mayukh
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/header.svg" width="100%" alt="Mayukh Das: System Architect Intern at Eccoi, Master of Computing at ANU, ex-Accenture">
+</p>
 
-Software engineer and ML enthusiast pursuing a **Master of Computing** at the Australian National University. Previously 3+ years at **Accenture India** building AIOps tools, explainable AI systems, and internal chatbots.
+<p align="center">
+  <a href="https://mayukh-d.github.io/"><img src="https://img.shields.io/badge/PORTFOLIO-00ff41?style=for-the-badge&logo=firefoxbrowser&logoColor=010203&labelColor=00ff41&color=00ff41" alt="Portfolio"></a>
+  <a href="https://www.linkedin.com/in/mayukh-das-a38319148"><img src="https://img.shields.io/badge/LINKEDIN-0a0f0c?style=for-the-badge&logo=linkedin&logoColor=00e5ff&labelColor=010203" alt="LinkedIn"></a>
+  <a href="mailto:mayukh1999@gmail.com"><img src="https://img.shields.io/badge/EMAIL-0a0f0c?style=for-the-badge&logo=maildotru&logoColor=00e5ff&labelColor=010203" alt="Email"></a>
+  <a href="https://mayukh-d.github.io/assets/Mayukh_Das_Resume.pdf"><img src="https://img.shields.io/badge/RESUME-0a0f0c?style=for-the-badge&logo=readdotcv&logoColor=00e5ff&labelColor=010203" alt="Resume"></a>
+</p>
 
-I like finding the simplest path through complex systems.
+<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/divider.svg" width="100%" alt="">
 
----
+## `~/about`
 
-### What I work on
+I build machine learning systems, and I care about the part where a human can actually
+follow what the system did and why.
 
-- **Deep Learning & Generative AI** — flow matching, diffusion models, transformers, nanoGPT
-- **Software Engineering** — full-stack (React, .NET, Node), Android, DevOps
-- **HCI & Product Design** — user research, AR prototyping, usability evaluation
+Right now I'm at **Eccoi** as a System Architect Intern on **SAICOP**, their
+Sovereign AI Community of Practice: architectural principles, system context modelling, platform
+assessment, and proving a conceptual architecture end to end against Australian Government
+delivery, security, and procurement realities.
 
----
+Alongside that I'm finishing a **Master of Computing at the ANU**, where I also **teach
+Human-Computer Interaction** as a Casual Sessional Academic, and represent the postgraduate
+cohort as an elected **ANUSA Postgraduate Representative**. Before Canberra: 3+ years at
+**Accenture** building AIOps tooling and explainable AI.
 
-### Featured Projects
+First degree was Automobile Engineering, which is why the aerodynamics of a Formula 1 car
+still interests me more than the racing does.
 
-| Project | What it is |
-|:--------|:-----------|
-| [**Image Generation with ML**](https://github.com/Mayukh-D/image-generation-with-machine-learning) | Flow matching experiments — how prediction parameterisation affects generative model quality across dimensions |
-| [**Story Generation (nanoGPT)**](https://github.com/Mayukh-D/story-generation-nanoGPT) | GPT trained from scratch on 3.7M tokens — architecture search under extreme data constraints |
-| [**Deep Learning: RNNs Revenge**](https://github.com/Mayukh-D/DL-RNNs-Revenge) | Comparing Transformers, gMLP, and minGRU on sequence tasks at matched parameter budgets |
-| [**HCI Design & Research**](https://github.com/Mayukh-D/hci-design-and-research) | Prototyping, user studies, and AR system evaluation — including FoodLens grocery scanner |
+<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/divider.svg" width="100%" alt="">
 
----
+## `~/stack`
 
-### Background
+`modelling` &nbsp; ![PyTorch](https://img.shields.io/badge/PyTorch-0a0f0c?style=flat-square&logo=pytorch&logoColor=00ff41) ![Python](https://img.shields.io/badge/Python-0a0f0c?style=flat-square&logo=python&logoColor=00ff41) ![NumPy](https://img.shields.io/badge/NumPy-0a0f0c?style=flat-square&logo=numpy&logoColor=00ff41) ![Pandas](https://img.shields.io/badge/Pandas-0a0f0c?style=flat-square&logo=pandas&logoColor=00ff41) ![scikit-learn](https://img.shields.io/badge/scikit--learn-0a0f0c?style=flat-square&logo=scikitlearn&logoColor=00ff41)
 
-- **Accenture** — Built *Ingrain* (predictive ML for IT ticket triage), integrated XAI reporting, built *Quasar++* (ChatGPT-powered document chatbot)
-- **Cognizant** — Full-stack web systems (.NET, React) for hospital logistics during COVID-19
-- **Research** — 3 publications (Scopus-indexed) spanning AI in materials science, electric propulsion, and blockchain
+`build` &nbsp; ![React](https://img.shields.io/badge/React-0a0f0c?style=flat-square&logo=react&logoColor=00e5ff) ![TypeScript](https://img.shields.io/badge/TypeScript-0a0f0c?style=flat-square&logo=typescript&logoColor=00e5ff) ![Node.js](https://img.shields.io/badge/Node.js-0a0f0c?style=flat-square&logo=nodedotjs&logoColor=00e5ff) ![.NET](https://img.shields.io/badge/.NET-0a0f0c?style=flat-square&logo=dotnet&logoColor=00e5ff) ![Java](https://img.shields.io/badge/Java-0a0f0c?style=flat-square&logo=openjdk&logoColor=00e5ff)
 
----
+`ship` &nbsp; ![Docker](https://img.shields.io/badge/Docker-0a0f0c?style=flat-square&logo=docker&logoColor=7d8f85) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-0a0f0c?style=flat-square&logo=githubactions&logoColor=7d8f85) ![Git](https://img.shields.io/badge/Git-0a0f0c?style=flat-square&logo=git&logoColor=7d8f85) ![Linux](https://img.shields.io/badge/Linux-0a0f0c?style=flat-square&logo=linux&logoColor=7d8f85)
 
-### Let's connect
+<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/divider.svg" width="100%" alt="">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mayukh-das-a38319148)
+## `~/work`
+
+| | |
+|:--|:--|
+| **[Flow Matching Parameterisation](https://github.com/Mayukh-D/image-generation-with-machine-learning)** | Flow matching from first principles: v-prediction against x-prediction across data dimensions, plus MeanFlow with Jacobian-vector-product targets. x-prediction holds where v-prediction collapses. |
+| **[Story Generation with nanoGPT](https://github.com/Mayukh-D/story-generation-nanoGPT)** | A GPT trained from scratch on 3.7M tokens. An architecture search run under a deliberately brutal data budget. |
+| **[RNNs Revenge](https://github.com/Mayukh-D/DL-RNNs-Revenge)** | Transformers, gMLP, and minGRU compared at matched parameter budgets on sequence tasks. |
+| **[HCI Design & Research](https://github.com/Mayukh-D/hci-design-and-research)** | Prototyping, user studies, and AR evaluation, including the FoodLens sustainable-shopping scanner. |
+| **[micrograd](https://github.com/Mayukh-D/micrograd)** | Autograd rebuilt by hand, because backprop should not be a black box. |
+
+Three Scopus-indexed publications across AI in materials science, electric propulsion for
+fixed-wing aircraft, and blockchain. Listed on
+**[the portfolio](https://mayukh-d.github.io/#publications)**.
+
+<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/divider.svg" width="100%" alt="">
+
+## `~/stats`
+
+<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/langs.svg" width="100%" alt="Language mix across my public repositories">
+
+<p align="center">
+  <sub><code>$ ./status --now</code> &nbsp;·&nbsp; sovereign AI architecture by day, generative models by night.</sub>
+</p>
+
+<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/divider.svg" width="100%" alt="">

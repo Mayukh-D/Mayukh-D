@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 16" width="1000" height="16" role="img" aria-label="divider">
+  <style>
+    @keyframes sweep { from { transform: translateX(-260px) } to { transform: translateX(1000px) } }
+    @keyframes fade  { 0%,100% { opacity:.25 } 50% { opacity:.7 } }
+    .pulse { animation: sweep 4.2s linear infinite }
+    .tick  { animation: fade 3s ease-in-out infinite }
+  </style>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0"   stop-color="#00ff41" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00ff41" stop-opacity="1"/>
+      <stop offset="0.8" stop-color="#00e5ff" stop-opacity="1"/>
+      <stop offset="1"   stop-color="#00e5ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="8" x2="1000" y2="8" stroke="#1d4a2f" stroke-width="1"/>
+  <g>
+    <line class="tick" x1="0"   y1="4" x2="0"   y2="12" stroke="#00b32e" stroke-width="1"/>
+    <line class="tick" x1="250" y1="5" x2="250" y2="11" stroke="#00b32e" stroke-width="1" style="animation-delay:-.6s"/>
+    <line class="tick" x1="500" y1="4" x2="500" y2="12" stroke="#00b32e" stroke-width="1" style="animation-delay:-1.2s"/>
+    <line class="tick" x1="750" y1="5" x2="750" y2="11" stroke="#00b32e" stroke-width="1" style="animation-delay:-1.8s"/>
+    <line class="tick" x1="999" y1="4" x2="999" y2="12" stroke="#00b32e" stroke-width="1" style="animation-delay:-2.4s"/>
+  </g>
+  <rect class="pulse" x="0" y="7" width="260" height="2" fill="url(#g)"/>
+</svg>
