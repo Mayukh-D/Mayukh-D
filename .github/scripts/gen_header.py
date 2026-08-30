@@ -37,7 +37,7 @@ LINES = [
              ("  ·  ex-Accenture, 3+ yrs", MUTED)]),
     ("gap", []),
     ("cmd", [("cat focus.txt", TEXT)]),
-    ("out", [("generative models · sovereign AI · HCI · F1 aero", MUTED)]),
+    ("out", [("generative models · sovereign AI · HCI · defence & geopolitics", MUTED)]),
     ("gap", []),
     ("cmd", [("./status --now", TEXT)]),
     ("out", [("[ok] ", GREEN), ("building things people can actually understand", TEXT)]),

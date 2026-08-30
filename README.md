@@ -26,8 +26,9 @@ Human-Computer Interaction** as a Casual Sessional Academic, and represent the p
 cohort as an elected **ANUSA Postgraduate Representative**. Before Canberra: 3+ years at
 **Accenture** building AIOps tooling and explainable AI.
 
-First degree was Automobile Engineering, which is why the aerodynamics of a Formula 1 car
-still interests me more than the racing does.
+Away from the screen I read defence and geopolitics analysis, alongside political history
+and theology. My first degree was Automobile Engineering, so I follow Formula 1 for the
+aerodynamics rather than the racing.
 
 <img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/divider.svg" width="100%" alt="">
 
