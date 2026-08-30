@@ -83,8 +83,8 @@ def build():
     body.append(f'<text class="t" x="{W/2}" y="{TOP/2+4.5}" text-anchor="middle" '
                 f'font-size="12" fill="{MUTED}">mayukh@github: ~/profile</text>')
 
-    # ---- attention motif (right side) ---------------------------------
-    body.append(attention())
+    # ---- feed-forward block (right side) ------------------------------
+    body.append(ffn())
 
     # ---- terminal lines -----------------------------------------------
     y = Y0
@@ -146,70 +146,79 @@ def build():
     return svg
 
 
-def attention():
-    """Causal self-attention over a token row.
+def ffn():
+    """Transformer feed-forward block: d -> 4d -> d, with the residual bypass.
 
-    The query sweeps left to right; at step j it attends to every key i <= j,
-    so its fan of edges lights up and the pulse runs back along them. Edges to
-    tokens ahead of the query never fire, which is the causal mask.
+    A forward pass propagates left to right. Stage k lights every edge from
+    layer k to layer k+1 and runs a pulse along it, then the receiving layer
+    brightens. The residual arc carries its own pulse the whole way, which is
+    the point of it: the signal skips the block entirely.
     """
-    N = 7
-    X0_A, SP = 634.0, 56.0
-    Y = 270.0
-    STEP = 0.9                      # seconds per query position
-    T = N * STEP
-    xs = [X0_A + i * SP for i in range(N)]
+    CX = [676.0, 812.0, 948.0]
+    SIZES = [3, 12, 3]                # literally the 4x expansion: 3 -> 12 -> 3
+    SPACING = [44.0, 18.0, 44.0]
+    YMID = 186.0
+    STAGE = 0.85                      # seconds per layer transition
+    T = len(CX) * STAGE               # two transitions plus a beat to reset
+
+    ys = [[YMID + (i - (n - 1) / 2.0) * sp for i in range(n)]
+          for n, sp in zip(SIZES, SPACING)]
 
     def pct(x):
         return round(100.0 * x / T, 3)
 
-    css, out = [], ['<g opacity="0.9">']
-    css.append(f"@keyframes pulse{{from{{stroke-dashoffset:100}}to{{stroke-dashoffset:0}}}}"
-               f".pulse{{animation:pulse {STEP*0.85:.2f}s linear infinite}}")
+    css, out = [], ['<g opacity="0.92">']
+    css.append("@keyframes flow{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}"
+               f".fl{{animation:flow {STAGE:.2f}s linear infinite}}")
 
-    # every causal edge, drawn faintly: the attention pattern at rest
-    for j in range(N):
-        for i in range(j):
-            x1, x2 = xs[i], xs[j]
-            h = 26.0 * (j - i)
-            d = f"M{x1} {Y}Q{(x1+x2)/2:.1f} {Y-h:.1f} {x2} {Y}"
-            out.append(f'<path d="{d}" fill="none" stroke="{BORDER_HI}" '
-                       f'stroke-width="1" opacity="0.35"/>')
+    # resting weights: every connection, drawn faintly
+    for k in range(len(CX) - 1):
+        for y1 in ys[k]:
+            for y2 in ys[k + 1]:
+                out.append(f'<line x1="{CX[k]}" y1="{y1:.1f}" x2="{CX[k+1]}" y2="{y2:.1f}" '
+                           f'stroke="{BORDER_HI}" stroke-width="0.7" opacity="0.28"/>')
 
-    # the same edges again, lit only while their query is active
-    for j in range(1, N):
-        s0, s1 = pct(j * STEP), pct((j + 1) * STEP)
+    # residual: around the block, not through it
+    rt = YMID - 122
+    res = (f"M{CX[0]-30:.0f} {YMID}C{CX[0]-30:.0f} {rt} {CX[2]+30:.0f} {rt} "
+           f"{CX[2]+30:.0f} {YMID}")
+    out.append(f'<path d="{res}" fill="none" stroke="{BORDER_HI}" stroke-width="1" '
+               f'opacity="0.5" stroke-dasharray="4 4"/>')
+    out.append(f'<path class="fl" d="{res}" pathLength="100" fill="none" stroke="{GREEN}" '
+               f'stroke-width="1.8" stroke-linecap="round" stroke-dasharray="12 88" '
+               f'opacity="0.75" style="animation-duration:{T:.2f}s"/>')
+
+    # the forward pass, one stage per transition
+    for k in range(len(CX) - 1):
+        s0, s1 = pct(k * STAGE), pct((k + 1) * STAGE)
         css.append(
-            f"@keyframes q{j}{{0%,{max(s0-0.4,0)}%{{opacity:0}}{s0}%,{max(s1-0.4,s0)}%{{opacity:1}}"
-            f"{s1}%,100%{{opacity:0}}}}"
-            f".q{j}{{animation:q{j} {T}s linear infinite}}")
-        out.append(f'<g class="q{j}">')
-        for i in range(j):
-            x1, x2 = xs[i], xs[j]
-            h = 26.0 * (j - i)
-            # drawn from the query back to the key, so the pulse runs the way
-            # attention reads: query gathers from what came before it
-            d = f"M{x2} {Y}Q{(x1+x2)/2:.1f} {Y-h:.1f} {x1} {Y}"
-            out.append(f'<path d="{d}" fill="none" stroke="{CYAN}" stroke-width="1.3" '
-                       f'opacity="0.4"/>')
-            # pathLength normalises the curve to 100 units, so the travelling
-            # dash is always exactly one pulse on the path whatever its real length
-            out.append(f'<path class="pulse" d="{d}" pathLength="100" fill="none" '
-                       f'stroke="{CYAN}" stroke-width="2" stroke-linecap="round" '
-                       f'stroke-dasharray="14 86" style="animation-delay:{-0.06*i:.2f}s"/>')
+            f"@keyframes s{k}{{0%,{max(s0-0.3,0)}%{{opacity:0}}{s0}%,{max(s1-0.3,s0)}%"
+            f"{{opacity:1}}{s1}%,100%{{opacity:0}}}}"
+            f".s{k}{{animation:s{k} {T}s linear infinite}}")
+        out.append(f'<g class="s{k}">')
+        for y1 in ys[k]:
+            for y2 in ys[k + 1]:
+                seg = f'x1="{CX[k]}" y1="{y1:.1f}" x2="{CX[k+1]}" y2="{y2:.1f}"'
+                out.append(f'<line {seg} stroke="{CYAN}" stroke-width="0.9" opacity="0.35"/>')
+                out.append(f'<line class="fl" {seg} pathLength="100" stroke="{CYAN}" '
+                           f'stroke-width="1.8" stroke-linecap="round" stroke-dasharray="16 84"/>')
         out.append("</g>")
 
-    # tokens; the active query brightens and swells
-    for j in range(N):
-        s0, s1 = pct(j * STEP), pct((j + 1) * STEP)
+    # units; each layer lights as the pass reaches it
+    for k, col in enumerate(ys):
+        s0 = pct(max(k * STAGE - 0.12, 0))
+        s1 = pct(min((k + 1) * STAGE, T))
         css.append(
-            f"@keyframes t{j}{{0%,{max(s0-0.4,0)}%{{r:3;fill:{GREEN_DIM}}}"
-            f"{s0}%,{max(s1-0.4,s0)}%{{r:5.2;fill:{CYAN}}}{s1}%,100%{{r:3;fill:{GREEN_DIM}}}}}"
-            f".t{j}{{animation:t{j} {T}s steps(1) infinite}}")
-        out.append(f'<circle class="t{j}" cx="{xs[j]}" cy="{Y}" r="3" fill="{GREEN_DIM}"/>')
+            f"@keyframes u{k}{{0%,{max(s0-0.3,0)}%{{r:3;fill:{GREEN_DIM}}}"
+            f"{s0}%,{max(s1-0.3,s0)}%{{r:4.6;fill:{CYAN}}}{s1}%,100%{{r:3;fill:{GREEN_DIM}}}}}"
+            f".u{k}{{animation:u{k} {T}s steps(1) infinite}}")
+        for y in col:
+            out.append(f'<circle class="u{k}" cx="{CX[k]}" cy="{y:.1f}" r="3" fill="{GREEN_DIM}"/>')
 
-    out.append(f'<text x="{xs[0]}" y="{Y+28}" font-size="10.5" fill="{MUTED}" opacity="0.65" '
-               f'font-family="ui-monospace,Menlo,Consolas,monospace">causal self-attention</text>')
+    out.append(f'<text x="{CX[0]-30:.0f}" y="{max(ys[1])+34:.0f}" font-size="10.5" '
+               f'fill="{MUTED}" opacity="0.65" '
+               f'font-family="ui-monospace,Menlo,Consolas,monospace">'
+               f'feed-forward &#183; d &#8594; 4d &#8594; d</text>')
     out.append("</g>")
     return f'<style>{"".join(css)}</style>' + "".join(out)
 
