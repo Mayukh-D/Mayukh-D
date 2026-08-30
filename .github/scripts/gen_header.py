@@ -16,7 +16,8 @@ TEXT      = "#d8e4dc"
 MUTED     = "#7d8f85"
 
 FS = 15.0          # font-size
-CW = 9.0           # forced char width (via textLength)
+CW = 9.0           # nominal char width, for layout estimates only
+MW = 9.7           # mask step width: deliberately >= any real advance
 X0 = 26.0          # left padding
 TOP = 34.0         # title bar height
 Y0 = TOP + 34.0    # first baseline
@@ -71,8 +72,7 @@ def build():
     css, body = [], []
 
     css.append(f""".t{{font-family:ui-monospace,'JetBrains Mono','SF Mono',SFMono-Regular,Menlo,Consolas,monospace;font-size:{FS}px;}}
-.blink{{animation:bl 1.06s steps(1) infinite;}}
-@keyframes bl{{0%,49%{{opacity:1}}50%,100%{{opacity:0}}}}""")
+@keyframes bl{{0%,49%{{fill:{GREEN}}}50%,100%{{fill:transparent}}}}""")
 
     # ---- terminal chrome ----------------------------------------------
     body.append(f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="10" fill="{BG}" stroke="{BORDER}"/>')
@@ -93,7 +93,7 @@ def build():
             y += LH * 0.55
             continue
         start, dur, n = sc
-        full = n * CW
+        full = n * MW
         s0, s1 = pct(start), pct(start + dur)
         # the cursor hands off to the next line as soon as that line begins
         nxt = next((s[0] for s in sched[idx + 1:] if s), None)
@@ -105,24 +105,22 @@ def build():
         css.append(
             f"@keyframes w{idx}{{0%,{s0}%{{width:0px}}{s1}%{{width:{full}px}}"
             f"{s1b}%,99.9%{{width:{W}px}}100%{{width:0px}}}}"
-            f"@keyframes x{idx}{{0%,{s0}%{{transform:translateX(0px)}}{s1}%,99.9%{{transform:translateX({full}px)}}"
-            f"100%{{transform:translateX(0px)}}}}"
             f"@keyframes o{idx}{{0%,{max(s0-0.01,0)}%{{opacity:0}}{s0}%,99.9%{{opacity:1}}100%{{opacity:0}}}}"
             f"@keyframes k{idx}{{0%,{max(s0-0.01,0)}%{{opacity:0}}{s0}%,{max(c_off-0.01,s0)}%{{opacity:1}}"
             f"{c_off}%,100%{{opacity:0}}}}"
             f".m{idx}{{animation:w{idx} {T}s steps({n}) infinite}}"
-            f".c{idx}{{animation:x{idx} {T}s steps({n}) infinite,k{idx} {T}s steps(1) infinite}}"
+            f".c{idx}{{animation:bl 1.06s steps(1) infinite,k{idx} {T}s steps(1) infinite}}"
             f".l{idx}{{animation:o{idx} {T}s steps(1) infinite}}"
         )
         body.append(f'<mask id="m{idx}"><rect class="m{idx}" x="{X0}" y="{y-FS}" '
                     f'height="{FS*1.5}" width="0" fill="#fff"/></mask>')
 
-        # textLength goes on each tspan, not on the parent <text>: Safari and
-        # Firefox do not reliably apply a parent textLength across child tspans,
-        # which left the line wider than n*CW and the cursor short of its end.
+        # No textLength anywhere. Safari scales tspans unpredictably under
+        # lengthAdjust, crushing some lines and stretching others. The cursor
+        # is a real character at the end of the run instead, so the engine
+        # positions it exactly, whatever advance the font actually has.
         def tspan(txt, col):
-            return (f'<tspan fill="{col}" textLength="{len(txt)*CW}" '
-                    f'lengthAdjust="spacingAndGlyphs">{esc(txt)}</tspan>')
+            return f'<tspan fill="{col}">{esc(txt)}</tspan>'
 
         parts = []
         if kind == "cmd":
@@ -131,11 +129,9 @@ def build():
         for txt, col in segs:
             parts.append(tspan(txt, col))
 
+        parts.append(f'<tspan class="c{idx}">&#9608;</tspan>')
         body.append(f'<text class="t l{idx}" x="{X0}" y="{y}" '
                     f'mask="url(#m{idx})">{"".join(parts)}</text>')
-        # walking cursor: the group handles position + handoff, the rect blinks
-        body.append(f'<g class="c{idx}"><rect class="blink" x="{X0}" y="{y-FS+2.5}" width="{CW}" '
-                    f'height="{FS}" fill="{GREEN}" opacity="0.75"/></g>')
         y += LH
 
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
