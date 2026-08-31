@@ -70,4 +70,4 @@ fixed-wing aircraft, and blockchain. Listed on
 
 <img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/divider.svg" width="100%" alt="">
 
-<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/rafale.svg" width="100%" alt="Halftone side elevation of a Dassault Rafale EH of No. 17 Squadron, Indian Air Force">
+<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/rafale.svg?v=2" width="100%" alt="Halftone side elevation of a Dassault Rafale EH of No. 17 Squadron, Indian Air Force">
