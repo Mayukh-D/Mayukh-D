@@ -37,13 +37,15 @@ BANDS = 16
 
 PLUME_X0 = -7.72          # nozzle exit
 PLUME_LEN = 3.5           # visible plume, metres
-PLUME_R0 = 0.42
+PLUME_R0 = 0.46
 P_LEVELS, P_BANDS = 8, 16
 COOL = (40, 120, 255)     # royal blue at the cool tail
 HOT = (150, 215, 255)     # bright blue, not white, at the throat
 
 
 P_PITCH = PITCH * 0.66
+CELL_L0 = 0.95            # first shock cell, metres
+CELL_DECAY = 0.80         # each cell is shorter than the one before it
 
 
 def build_plume(S, ox, oy):
@@ -54,6 +56,23 @@ def build_plume(S, ox, oy):
     That periodic structure is what reads as an afterburner rather than a
     smear of colour.
     """
+    # Cell boundaries. Each shock cell is shorter than the last as the jet
+    # loses the pressure mismatch driving it, which is why a real plume is
+    # never periodic. A cosine here was the tell: it read as a sine wave.
+    cells, d = [0.0], 0.0
+    for k in range(10):
+        d += CELL_L0 * (CELL_DECAY ** k)
+        cells.append(d)
+        if d > PLUME_LEN:
+            break
+
+    def cell_u(dist):
+        """Position within the current cell, 0 at one shock crossing to 1 at the next."""
+        for k in range(len(cells) - 1):
+            if cells[k] <= dist < cells[k + 1]:
+                return (dist - cells[k]) / (cells[k + 1] - cells[k])
+        return 1.0
+
     g = P_PITCH / S
     buckets = {}
     y = -PLUME_R0 * 1.9
@@ -61,16 +80,24 @@ def build_plume(S, ox, oy):
     while y <= PLUME_R0 * 1.9:
         x = PLUME_X0 - (g / 2 if row % 2 else 0)
         while x >= PLUME_X0 - PLUME_LEN:
-            t = (PLUME_X0 - x) / PLUME_LEN
-            r = max(PLUME_R0 * (1 - t) ** 0.55 * (1 + 0.28 * math.cos(2 * math.pi * 3.4 * t)), 0.05)
+            dist = PLUME_X0 - x
+            t = dist / PLUME_LEN
+            u = cell_u(dist)
+            # triangular profile: straight edges meeting at a cusp, so the
+            # cells read as diamonds rather than as smooth humps
+            tri = 1.0 - abs(2.0 * u - 1.0)
+            r = max(PLUME_R0 * (1 - t) ** 0.5 * (0.52 + 0.48 * tri), 0.05)
             a = abs(y)
             if a <= r * 1.75:
                 axial = (1 - t) ** 0.80
-                diamond = 1 + 0.95 * (0.5 + 0.5 * math.cos(2 * math.pi * 3.4 * t))
+                # the glow is unburnt fuel re-igniting where the shocks cross,
+                # so it spikes narrowly at the cell boundary
+                node = math.exp(-((min(u, 1.0 - u)) / 0.14) ** 2)
+                glow = 0.52 + 1.05 * node
                 if a <= r:
-                    v = axial * (1 - (a / r) ** 2) * diamond
+                    v = axial * (1 - (a / r) ** 2) * glow
                 else:
-                    v = axial * 0.34 * (1 - (a - r) / (r * 0.75)) * diamond
+                    v = axial * 0.34 * (1 - (a - r) / (r * 0.75)) * glow
                 v = max(0.0, min(1.0, v)) ** 0.70
                 if v > 0.06:
                     buckets.setdefault(
