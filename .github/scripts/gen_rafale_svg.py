@@ -20,9 +20,9 @@ import sys
 
 SRC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "rafale_dots.js")
 
-DOT_LO = (0, 96, 34)
-DOT_HI = (110, 255, 140)
-AIR = "#00e5ff"
+DOT_LO = (0, 118, 150)
+DOT_HI = (120, 245, 255)
+AIR = "#00ff41"
 ACCENT = "#00ff41"
 MUTED = "#7d8f85"
 MONO = "ui-monospace,'JetBrains Mono','SF Mono',Menlo,Consolas,monospace"
