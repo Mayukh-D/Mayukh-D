@@ -39,8 +39,8 @@ PLUME_X0 = -7.72          # nozzle exit
 PLUME_LEN = 3.5           # visible plume, metres
 PLUME_R0 = 0.46
 P_LEVELS, P_BANDS = 8, 16
-COOL = (40, 120, 255)     # royal blue at the cool tail
-HOT = (150, 215, 255)     # bright blue, not white, at the throat
+COOL = (146, 234, 250)    # pale cyan at the cool tail
+HOT = (248, 254, 255)     # near-white, cyan-tinted, at the throat
 
 
 P_PITCH = PITCH * 0.66
