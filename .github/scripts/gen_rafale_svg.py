@@ -20,9 +20,10 @@ import sys
 
 SRC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "rafale_dots.js")
 
-CYAN_LO = (0, 118, 150)
-CYAN_HI = (120, 245, 255)
-GREEN = "#00ff41"
+DOT_LO = (0, 96, 34)
+DOT_HI = (110, 255, 140)
+AIR = "#00e5ff"
+ACCENT = "#00ff41"
 MUTED = "#7d8f85"
 MONO = "ui-monospace,'JetBrains Mono','SF Mono',Menlo,Consolas,monospace"
 
@@ -102,7 +103,7 @@ def main(out_path):
     for lvl in range(LEVELS):
         f = (lvl + 0.5) / LEVELS
         r = 0.38 + 0.62 * f
-        col = tuple(round(CYAN_LO[i] + (CYAN_HI[i] - CYAN_LO[i]) * f) for i in range(3))
+        col = tuple(round(DOT_LO[i] + (DOT_HI[i] - DOT_LO[i]) * f) for i in range(3))
         css.append(f".t{lvl}{{fill:rgb{col};fill-opacity:{0.42 + 0.58 * f:.2f}}}")
     for b in range(BANDS):
         css.append(f".b{b}{{animation:wave 5.4s ease-in-out infinite;"
@@ -125,7 +126,7 @@ def main(out_path):
         css.append(f".a{i}{{animation:drift {dur:.2f}s linear infinite;"
                    f"animation-delay:-{(i * 0.9) % dur:.2f}s}}")
         body.append(f'<line class="a{i}" x1="{W+300}" y1="{yy:.0f}" x2="{W+300+ln}" '
-                    f'y2="{yy:.0f}" stroke="{GREEN}" stroke-width="1" '
+                    f'y2="{yy:.0f}" stroke="{AIR}" stroke-width="1" '
                     f'opacity="{op:.2f}" stroke-linecap="round"/>')
     for i in range(5):
         rnd = (rnd * 1103515245 + 12345) & 0x7FFFFFFF
@@ -138,7 +139,7 @@ def main(out_path):
         d = (f"M0 0c{30*sc:.0f} -{14*sc:.0f} {76*sc:.0f} -{18*sc:.0f} {130*sc:.0f} -{6*sc:.0f}"
              f"c{38*sc:.0f} -{15*sc:.0f} {84*sc:.0f} -{10*sc:.0f} {124*sc:.0f} {8*sc:.0f}")
         body.append(f'<path class="w{i}" d="{d}" transform="translate({W+300} {yy})" '
-                    f'fill="none" stroke="{GREEN}" stroke-width="1.1" opacity="0.10" '
+                    f'fill="none" stroke="{AIR}" stroke-width="1.1" opacity="0.10" '
                     f'stroke-linecap="round"/>')
     body.append('</g>')
 
@@ -156,7 +157,7 @@ def main(out_path):
     body.append(f'<text x="34" y="{H-28}" font-family="{MONO}" font-size="11" '
                 f'fill="{MUTED}">No. 17 SQN &#183; GOLDEN ARROWS</text>')
     body.append(f'<text x="34" y="{H-12}" font-family="{MONO}" font-size="11" '
-                f'fill="{GREEN}" opacity="0.55">defence &#183; geopolitics &#183; airpower</text>')
+                f'fill="{ACCENT}" opacity="0.55">defence &#183; geopolitics &#183; airpower</text>')
 
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
            f'width="{W}" height="{H}" role="img" '
