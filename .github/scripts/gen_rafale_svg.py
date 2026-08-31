@@ -14,6 +14,7 @@ site (mayukh-d.github.io) inlines the same renderer to draw this on a canvas;
 if the airframe changes, both need regenerating.
 """
 
+import math
 import os
 import re
 import sys
@@ -28,10 +29,58 @@ MUTED = "#7d8f85"
 MONO = "ui-monospace,'JetBrains Mono','SF Mono',Menlo,Consolas,monospace"
 
 W, H = 1000, 300
-MINX, MAXX, MINY, MAXY = -9.0, 8.8, -1.65, 3.45
+MINX, MAXX, MINY, MAXY = -11.7, 8.8, -1.65, 3.45
 PITCH = 5.6            # viewBox units between samples
 LEVELS = 6
 BANDS = 16
+
+
+PLUME_X0 = -7.72          # nozzle exit
+PLUME_LEN = 3.5           # visible plume, metres
+PLUME_R0 = 0.42
+P_LEVELS, P_BANDS = 8, 16
+COOL = (40, 120, 255)     # royal blue at the cool tail
+HOT = (150, 215, 255)     # bright blue, not white, at the throat
+
+
+P_PITCH = PITCH * 0.66
+
+
+def build_plume(S, ox, oy):
+    """Afterburner plume: a tapering jet with shock diamonds.
+
+    Radius pulses along the axis, so the flow pinches and bulges the way a
+    real over-expanded nozzle does, and brightness peaks at the pinches.
+    That periodic structure is what reads as an afterburner rather than a
+    smear of colour.
+    """
+    g = P_PITCH / S
+    buckets = {}
+    y = -PLUME_R0 * 1.9
+    row = 0
+    while y <= PLUME_R0 * 1.9:
+        x = PLUME_X0 - (g / 2 if row % 2 else 0)
+        while x >= PLUME_X0 - PLUME_LEN:
+            t = (PLUME_X0 - x) / PLUME_LEN
+            r = max(PLUME_R0 * (1 - t) ** 0.55 * (1 + 0.28 * math.cos(2 * math.pi * 3.4 * t)), 0.05)
+            a = abs(y)
+            if a <= r * 1.75:
+                axial = (1 - t) ** 0.80
+                diamond = 1 + 0.95 * (0.5 + 0.5 * math.cos(2 * math.pi * 3.4 * t))
+                if a <= r:
+                    v = axial * (1 - (a / r) ** 2) * diamond
+                else:
+                    v = axial * 0.34 * (1 - (a - r) / (r * 0.75)) * diamond
+                v = max(0.0, min(1.0, v)) ** 0.70
+                if v > 0.06:
+                    buckets.setdefault(
+                        (min(P_LEVELS - 1, int(v * P_LEVELS)),
+                         min(P_BANDS - 1, int(t * P_BANDS))), []
+                    ).append((ox + x * S, oy - y * S))
+            x -= g
+        y += g
+        row += 1
+    return buckets
 
 
 def load_regions(path):
@@ -59,11 +108,17 @@ def inside(px, py, poly):
     return c
 
 
-def build(regions):
+def frame():
     spanX, spanY = MAXX - MINX, MAXY - MINY
     S = min(W / spanX, H / spanY) * 0.88
-    ox = W / 2 - ((MINX + MAXX) / 2) * S
-    oy = H / 2 + ((MINY + MAXY) / 2) * S - H * 0.05
+    return (S,
+            W / 2 - ((MINX + MAXX) / 2) * S,
+            H / 2 + ((MINY + MAXY) / 2) * S - H * 0.05)
+
+
+def build(regions):
+    spanX, spanY = MAXX - MINX, MAXY - MINY
+    S, ox, oy = frame()
 
     g = PITCH / S
     buckets = {}
@@ -93,6 +148,7 @@ def build(regions):
 def main(out_path):
     regions = load_regions(SRC)
     buckets = build(regions)
+    S, ox, oy = frame()
     total = sum(len(v) for v in buckets.values())
 
     css = [
@@ -142,6 +198,21 @@ def main(out_path):
                     f'fill="none" stroke="{AIR}" stroke-width="1.1" opacity="0.10" '
                     f'stroke-linecap="round"/>')
     body.append('</g>')
+
+    # afterburner, behind the airframe
+    css.append("@keyframes burn{0%,100%{opacity:.52}45%{opacity:1}}")
+    for lvl in range(P_LEVELS):
+        f = (lvl + 0.5) / P_LEVELS
+        col = tuple(round(COOL[i] + (HOT[i] - COOL[i]) * f) for i in range(3))
+        css.append(f".p{lvl}{{fill:rgb{col};fill-opacity:{0.58 + 0.42 * f:.2f}}}")
+    for b in range(P_BANDS):
+        css.append(f".f{b}{{animation:burn 0.8s ease-in-out infinite;"
+                   f"animation-delay:-{b * 0.05:.2f}s}}")
+    for (lvl, band), pts in sorted(build_plume(S, ox, oy).items()):
+        f = (lvl + 0.5) / P_LEVELS
+        rr = (0.52 + 0.48 * f) * P_PITCH * 0.5
+        dots = "".join(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{rr:.2f}"/>' for x, y in pts)
+        body.append(f'<g class="p{lvl} f{band}">{dots}</g>')
 
     # the airframe
     for (lvl, band), pts in sorted(buckets.items()):
