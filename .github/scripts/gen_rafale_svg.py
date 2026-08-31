@@ -14,6 +14,7 @@ site (mayukh-d.github.io) inlines the same renderer to draw this on a canvas;
 if the airframe changes, both need regenerating.
 """
 
+import hashlib
 import math
 import os
 import re
@@ -39,8 +40,8 @@ PLUME_X0 = -7.72          # nozzle exit
 PLUME_LEN = 3.5           # visible plume, metres
 PLUME_R0 = 0.46
 P_LEVELS, P_BANDS = 8, 16
-COOL = (146, 234, 250)    # pale cyan at the cool tail
-HOT = (248, 254, 255)     # near-white, cyan-tinted, at the throat
+COOL = (40, 120, 255)     # royal blue at the cool tail
+HOT = (150, 215, 255)     # bright blue, not white, at the throat
 
 
 P_PITCH = PITCH * 0.66
@@ -263,8 +264,20 @@ def main(out_path):
            f'No. 17 Squadron, Indian Air Force.">'
            f'<style>{"".join(css)}</style>{"".join(body)}</svg>')
     open(out_path, "w").write(svg)
+    digest = hashlib.sha1(svg.encode()).hexdigest()[:8]
     print(f"wrote {out_path}: {total} dots, {len(buckets)} groups, "
-          f"{len(svg)/1024:.0f} KB")
+          f"{len(svg)/1024:.0f} KB, hash {digest}")
+
+    # GitHub proxies README images through camo, which caches server-side and
+    # keys on the URL. Without this, a recolour ships but nobody ever sees it.
+    readme = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                          "..", "..", "README.md")
+    if os.path.exists(readme):
+        text = open(readme).read()
+        new = re.sub(r"rafale\.svg(\?v=[0-9a-z]+)?", f"rafale.svg?v={digest}", text)
+        if new != text:
+            open(readme, "w").write(new)
+            print(f"README cache key -> ?v={digest}")
 
 
 if __name__ == "__main__":
