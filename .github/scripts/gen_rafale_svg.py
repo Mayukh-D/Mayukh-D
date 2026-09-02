@@ -228,14 +228,17 @@ def main(out_path):
     body.append('</g>')
 
     # afterburner, behind the airframe
-    css.append("@keyframes burn{0%,100%{opacity:.52}45%{opacity:1}}")
+    css.append("@keyframes burn{0%,100%{opacity:.50}45%{opacity:1}}")
     for lvl in range(P_LEVELS):
         f = (lvl + 0.5) / P_LEVELS
         col = tuple(round(COOL[i] + (HOT[i] - COOL[i]) * f) for i in range(3))
         css.append(f".p{lvl}{{fill:rgb{col};fill-opacity:{0.58 + 0.42 * f:.2f}}}")
+    # The advance has to DECREASE with band index so the near-nozzle band peaks
+    # first and the bright wave runs aft. Increasing it ran the wave forward,
+    # up into the engine, which reads as a throb rather than as thrust.
     for b in range(P_BANDS):
-        css.append(f".f{b}{{animation:burn 0.8s ease-in-out infinite;"
-                   f"animation-delay:-{b * 0.05:.2f}s}}")
+        css.append(f".f{b}{{animation:burn 0.62s linear infinite;"
+                   f"animation-delay:-{(P_BANDS - 1 - b) * 0.042:.3f}s}}")
     for (lvl, band), pts in sorted(build_plume(S, ox, oy).items()):
         f = (lvl + 0.5) / P_LEVELS
         rr = (0.52 + 0.48 * f) * P_PITCH * 0.5
