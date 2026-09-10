@@ -46,13 +46,35 @@ aerodynamics rather than the racing.
 
 ## `~/work`
 
-| | |
-|:--|:--|
-| **[Flow Matching Parameterisation](https://github.com/Mayukh-D/image-generation-with-machine-learning)** | Flow matching from first principles: v-prediction against x-prediction across data dimensions, plus MeanFlow with Jacobian-vector-product targets. x-prediction holds where v-prediction collapses. |
-| **[Story Generation with nanoGPT](https://github.com/Mayukh-D/story-generation-nanoGPT)** | A GPT trained from scratch on 3.7M tokens. An architecture search run under a deliberately brutal data budget. |
-| **[RNNs Revenge](https://github.com/Mayukh-D/DL-RNNs-Revenge)** | Transformers, gMLP, and minGRU compared at matched parameter budgets on sequence tasks. |
-| **[HCI Design & Research](https://github.com/Mayukh-D/hci-design-and-research)** | Prototyping, user studies, and AR evaluation, including the FoodLens sustainable-shopping scanner. |
-| **[micrograd](https://github.com/Mayukh-D/micrograd)** | Autograd rebuilt by hand, because backprop should not be a black box. |
+<table>
+<tr><td width="50%">
+
+<a href="https://github.com/Mayukh-D/image-generation-with-machine-learning"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-flow-matching.svg?v=1" width="100%" alt="Flow Matching Parameterisation"></a>
+
+</td><td width="50%">
+
+<a href="https://github.com/Mayukh-D/story-generation-nanoGPT"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-nanogpt.svg?v=1" width="100%" alt="Story Generation with nanoGPT"></a>
+
+</td></tr>
+<tr><td>
+
+<a href="https://github.com/Mayukh-D/Deep-Learning-Transformers-Revenge"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-transformers-revenge.svg?v=1" width="100%" alt="Transformers' Revenge"></a>
+
+</td><td>
+
+<a href="https://github.com/Mayukh-D/foodlens-ar-sustainable-shopping"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-foodlens.svg?v=1" width="100%" alt="FoodLens, a smart food scanner"></a>
+
+</td></tr>
+<tr><td>
+
+<a href="https://github.com/Mayukh-D/yuma-social-platform"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-yuma.svg?v=1" width="100%" alt="Yuma Social Platform"></a>
+
+</td><td>
+
+<a href="https://github.com/Mayukh-D/hci-design-and-research"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-hci.svg?v=1" width="100%" alt="HCI Design and Research"></a>
+
+</td></tr>
+</table>
 
 Three Scopus-indexed publications across AI in materials science, electric propulsion for
 fixed-wing aircraft, and blockchain. Listed on

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 306" width="520" height="306" role="img" aria-label="HCI Design and Research">
+<style>
+.t{font-family:ui-monospace,'JetBrains Mono','SF Mono',SFMono-Regular,Menlo,Consolas,monospace}
+@keyframes pop{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+@keyframes dash{to{stroke-dashoffset:-44}}
+@keyframes scan{0%{transform:translateY(0)}50%{transform:translateY(62px)}100%{transform:translateY(0)}}
+@keyframes ping{0%,100%{opacity:.15}50%{opacity:.6}}
+.pop{animation:pop .5s ease-out both}
+.dash{animation:dash 2.4s linear infinite}
+.scan{animation:scan 3.2s ease-in-out infinite}
+.ping{animation:ping 2.6s ease-in-out infinite}
+</style>
+<rect x="1" y="1" width="518" height="304" rx="12" fill="#010203" stroke="#10241a"/>
+<rect x="1" y="1" width="518" height="3" rx="1.5" fill="#00ff41" opacity=".55"/>
+<rect x="22" y="20" width="34" height="34" rx="9" fill="#00ff41"/>
+<g transform="translate(27,25) scale(0.83)"><path d="M5 3l14 8-6.2 1.6L9.4 19z" fill="none" stroke="#010203" stroke-width="2" stroke-linejoin="round"/></g>
+<text class="t" x="68" y="36" font-size="14.5" fill="#d8e4dc" font-weight="600">HCI Design &amp; Research</text>
+<text class="t" x="68" y="51" font-size="9" fill="#7d8f85" letter-spacing="1.1">RESEARCH &#183; PROTOTYPING &#183; EVALUATION</text>
+<rect x="22" y="68" width="476" height="132" rx="8" fill="#0a0f0c" stroke="#10241a"/>
+<clipPath id="c"><rect x="22" y="68" width="476" height="132" rx="8"/></clipPath>
+<g clip-path="url(#c)"><g transform="translate(22,68)"><rect x="34" y="20" width="120" height="94" rx="6" fill="#0d1a12" stroke="#1d4a2f"/><rect x="44" y="30" width="100" height="18" rx="3" fill="#1d4a2f" opacity=".7"/><rect x="44" y="58" width="44" height="18" rx="3" fill="#00ff41" opacity="0.35"/><rect x="96" y="58" width="44" height="18" rx="3" fill="#00ff41" opacity="0.35"/><rect x="44" y="82" width="44" height="18" rx="3" fill="#00ff41" opacity="0.23"/><rect x="96" y="82" width="44" height="18" rx="3" fill="#00ff41" opacity="0.23"/><circle class="ping" cx="200" cy="66" r="26" fill="none" stroke="#00e5ff" stroke-width="1.2" opacity=".5" style="animation-delay:-0.0s"/><circle class="ping" cx="200" cy="66" r="18" fill="none" stroke="#00e5ff" stroke-width="1.2" opacity=".5" style="animation-delay:-0.7s"/><circle class="ping" cx="200" cy="66" r="10" fill="none" stroke="#00e5ff" stroke-width="1.2" opacity=".5" style="animation-delay:-1.4s"/><path d="M196 60 l16 18 -7 1 -3 8z" fill="#d8e4dc"/><text class="t" x="256" y="42" font-size="10.5" fill="#d8e4dc">&#8250; prototype</text><text class="t" x="256" y="68" font-size="10.5" fill="#d8e4dc">&#8250; user study</text><text class="t" x="256" y="94" font-size="10.5" fill="#d8e4dc">&#8250; AR evaluation</text></g></g>
+<text class="t" x="22" y="224" font-size="11.5" fill="#9fb3a8">Human-computer interaction work end to end: low- and high-fidelity</text><text class="t" x="22" y="242" font-size="11.5" fill="#9fb3a8">prototyping, user research with real participants, and evaluation of</text><text class="t" x="22" y="260" font-size="11.5" fill="#9fb3a8">augmented-reality systems against task performance.</text>
+<line x1="22" y1="272" x2="498" y2="272" stroke="#10241a"/>
+<text class="t" x="22" y="291" font-size="10.5" fill="#00ff41" opacity=".85">&#8250; github.com/Mayukh-D/hci-design-and-research</text>
+</svg>
