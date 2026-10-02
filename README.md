@@ -74,6 +74,15 @@ aerodynamics rather than the racing.
 <a href="https://github.com/Mayukh-D/hci-design-and-research"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-hci.svg?v=1" width="100%" alt="HCI Design and Research"></a>
 
 </td></tr>
+<tr><td>
+
+<a href="https://github.com/Mayukh-D/TokenEater"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-tokeneater.svg?v=1" width="100%" alt="TokenEater, multi-account fork"></a>
+
+</td><td>
+
+<a href="https://github.com/Mayukh-D/GrowthScope"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-growthscope.svg?v=1" width="100%" alt="GrowthScope, my first hackathon project"></a>
+
+</td></tr>
 </table>
 
 Three Scopus-indexed publications across AI in materials science, electric propulsion for
