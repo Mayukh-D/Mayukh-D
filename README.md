@@ -80,7 +80,16 @@ aerodynamics rather than the racing.
 
 </td><td>
 
+<a href="https://github.com/Mayukh-D/lantern"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-lantern.svg?v=1" width="100%" alt="Lantern, screen sync for a cheap LED bar"></a>
+
+</td></tr>
+<tr><td>
+
 <a href="https://github.com/Mayukh-D/GrowthScope"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-growthscope.svg?v=1" width="100%" alt="GrowthScope, my first hackathon project"></a>
+
+</td><td>
+
+<a href="https://github.com/Mayukh-D?tab=repositories"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-more.svg?v=1" width="100%" alt="More on GitHub"></a>
 
 </td></tr>
 </table>
