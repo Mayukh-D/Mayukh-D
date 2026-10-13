@@ -3,10 +3,10 @@
 </p>
 
 <p align="center">
-  <a href="https://mayukh-d.github.io/"><img src="https://img.shields.io/badge/PORTFOLIO-00ff41?style=for-the-badge&logo=firefoxbrowser&logoColor=010203&labelColor=00ff41&color=00ff41" alt="Portfolio"></a>
+  <a href="https://mayukhdas.com/"><img src="https://img.shields.io/badge/PORTFOLIO-00ff41?style=for-the-badge&logo=firefoxbrowser&logoColor=010203&labelColor=00ff41&color=00ff41" alt="Portfolio"></a>
   <a href="https://www.linkedin.com/in/mayukh-das-a38319148"><img src="https://img.shields.io/badge/LINKEDIN-0a0f0c?style=for-the-badge&logo=linkedin&logoColor=00e5ff&labelColor=010203" alt="LinkedIn"></a>
   <a href="mailto:mayukh1999@gmail.com"><img src="https://img.shields.io/badge/EMAIL-0a0f0c?style=for-the-badge&logo=maildotru&logoColor=00e5ff&labelColor=010203" alt="Email"></a>
-  <a href="https://mayukh-d.github.io/assets/Mayukh_Das_Resume.pdf"><img src="https://img.shields.io/badge/RESUME-0a0f0c?style=for-the-badge&logo=readdotcv&logoColor=00e5ff&labelColor=010203" alt="Resume"></a>
+  <a href="https://mayukhdas.com/assets/Mayukh_Das_Resume.pdf"><img src="https://img.shields.io/badge/RESUME-0a0f0c?style=for-the-badge&logo=readdotcv&logoColor=00e5ff&labelColor=010203" alt="Resume"></a>
 </p>
 
 <img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/divider.svg" width="100%" alt="">
