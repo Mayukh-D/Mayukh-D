@@ -85,11 +85,16 @@ aerodynamics rather than the racing.
 </td></tr>
 <tr><td>
 
-<a href="https://github.com/Mayukh-D/GrowthScope"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-growthscope.svg?v=1" width="100%" alt="GrowthScope, my first hackathon project"></a>
+<a href="https://github.com/Mayukh-D/mayukh-d.github.io"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-website.svg?v=1" width="100%" alt="This website: designed in Mayukh's head, manufactured in Claude Code"></a>
 
 </td><td>
 
-<a href="https://github.com/Mayukh-D?tab=repositories"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-more.svg?v=1" width="100%" alt="More on GitHub"></a>
+<a href="https://github.com/Mayukh-D/GrowthScope"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-growthscope.svg?v=1" width="100%" alt="GrowthScope, my first hackathon project"></a>
+
+</td></tr>
+<tr><td colspan="2" align="center">
+
+<a href="https://github.com/Mayukh-D?tab=repositories"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-more.svg?v=1" width="50%" alt="More on GitHub"></a>
 
 </td></tr>
 </table>
