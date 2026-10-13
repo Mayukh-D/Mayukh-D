@@ -85,7 +85,7 @@ aerodynamics rather than the racing.
 </td></tr>
 <tr><td>
 
-<a href="https://github.com/Mayukh-D/mayukh-d.github.io"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-website.svg?v=2" width="100%" alt="This website: designed by Mayukh in Canberra, assembled in Claude Code"></a>
+<a href="https://github.com/Mayukh-D/mayukh-d.github.io"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-website.svg?v=3" width="100%" alt="This website: designed by Mayukh in Canberra, assembled in Claude Code"></a>
 
 </td><td>
 
