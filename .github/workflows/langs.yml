@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - ".github/scripts/gen_langs.py"
+      - ".github/scripts/gen_metrics.py"
       - ".github/workflows/langs.yml"
 
 permissions:
@@ -26,13 +27,18 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python .github/scripts/gen_langs.py assets/langs.svg
 
+      - name: Regenerate assets/metrics.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/scripts/gen_metrics.py assets/metrics.svg
+
       - name: Commit if changed
         run: |
-          if git diff --quiet -- assets/langs.svg; then
+          if git diff --quiet -- assets/langs.svg assets/metrics.svg; then
             echo "no change"
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -am "chore: refresh language panel"
+          git commit -am "chore: refresh language and metrics panels"
           git push

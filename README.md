@@ -95,12 +95,15 @@ aerodynamics rather than the racing.
 </table>
 
 Three Scopus-indexed publications across AI in materials science, electric propulsion for
-fixed-wing aircraft, and blockchain. Listed on
-**[the portfolio](https://mayukh-d.github.io/#publications)**.
+fixed-wing aircraft, and blockchain, cited 57 times. Listed on
+**[the portfolio](https://mayukhdas.com/#publications)** and
+**[Google Scholar](https://scholar.google.com/citations?user=slmJwmkAAAAJ)**.
 
 <img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/divider.svg" width="100%" alt="">
 
 ## `~/stats`
+
+<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/metrics.svg" width="100%" alt="Metrics: 3+ years in industry, 5 roles held, 3 internships, 1 course taught, 3 peer-reviewed papers, 57 citations, plus live counts of public projects and contributions">
 
 <img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/langs.svg" width="100%" alt="Language mix across my public repositories">
 
