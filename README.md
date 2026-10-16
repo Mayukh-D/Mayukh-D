@@ -106,6 +106,17 @@ fixed-wing aircraft, and blockchain, cited 57 times. Listed on
 
 <img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/divider.svg" width="100%" alt="">
 
+## 🔨 I've contributed to
+
+| Project | Contribution | Status |
+| --- | --- | --- |
+| [AThevon/TokenEater](https://github.com/AThevon/TokenEater) | [Track a second Claude account as its own provider](https://github.com/AThevon/TokenEater/pull/284) | [![PR 284](https://img.shields.io/github/pulls/detail/state/AThevon/TokenEater/284?style=flat-square&labelColor=010203&color=00e5ff&label=%23284)](https://github.com/AThevon/TokenEater/pull/284) |
+| [AThevon/TokenEater](https://github.com/AThevon/TokenEater) | [Show the amount spent when extra credits have no monthly limit](https://github.com/AThevon/TokenEater/pull/292) | [![PR 292](https://img.shields.io/github/pulls/detail/state/AThevon/TokenEater/292?style=flat-square&labelColor=010203&color=00e5ff&label=%23292)](https://github.com/AThevon/TokenEater/pull/292) |
+| [Lord-V15/DL-RNNs-Revenge](https://github.com/Lord-V15/DL-RNNs-Revenge) | [Standardise the training protocol across all three paradigms](https://github.com/Lord-V15/DL-RNNs-Revenge/pull/2) | [![PR 2](https://img.shields.io/github/pulls/detail/state/Lord-V15/DL-RNNs-Revenge/2?style=flat-square&labelColor=010203&color=00ff41&label=%232)](https://github.com/Lord-V15/DL-RNNs-Revenge/pull/2) |
+| [Lord-V15/DL-RNNs-Revenge](https://github.com/Lord-V15/DL-RNNs-Revenge) | [Transformer model code](https://github.com/Lord-V15/DL-RNNs-Revenge/pull/1) | [![PR 1](https://img.shields.io/github/pulls/detail/state/Lord-V15/DL-RNNs-Revenge/1?style=flat-square&labelColor=010203&color=00ff41&label=%231)](https://github.com/Lord-V15/DL-RNNs-Revenge/pull/1) |
+
+<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/divider.svg" width="100%" alt="">
+
 ## `~/stats`
 
 <img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/metrics.svg" width="100%" alt="Metrics: 3+ years in industry, 5 roles held, 3 internships, 1 course taught, 3 peer-reviewed papers, 57 citations, plus live counts of public projects and contributions">
