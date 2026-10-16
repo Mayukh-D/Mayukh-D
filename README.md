@@ -94,7 +94,7 @@ aerodynamics rather than the racing.
 </td></tr>
 <tr><td colspan="2" align="center">
 
-<a href="https://github.com/Mayukh-D?tab=repositories"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-more.svg?v=2" width="100%" alt="More on GitHub"></a>
+<a href="https://github.com/Mayukh-D?tab=repositories"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/4b5c44f/assets/card-more.svg" width="100%" alt="More on GitHub"></a>
 
 </td></tr>
 </table>
