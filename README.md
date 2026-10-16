@@ -92,12 +92,9 @@ aerodynamics rather than the racing.
 <a href="https://github.com/Mayukh-D/GrowthScope"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-growthscope.svg?v=1" width="100%" alt="GrowthScope, my first hackathon project"></a>
 
 </td></tr>
-<tr><td colspan="2" align="center">
-
-<a href="https://github.com/Mayukh-D?tab=repositories"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/4b5c44f/assets/card-more.svg" width="100%" alt="More on GitHub"></a>
-
-</td></tr>
 </table>
+
+<p align="center"><a href="https://github.com/Mayukh-D?tab=repositories"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/4b5c44f/assets/card-more.svg" width="100%" alt="More on GitHub"></a></p>
 
 Three Scopus-indexed publications across AI in materials science, electric propulsion for
 fixed-wing aircraft, and blockchain, cited 57 times. Listed on
