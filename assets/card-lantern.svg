@@ -26,7 +26,7 @@
   <text class="t" x="350" y="92" font-size="10" fill="#7d8f85">this</text>
   <text class="t" x="350" y="108" font-size="13" font-weight="700" fill="#00ff41">A$49</text>
 </g></g>
-<text class="t" x="22" y="224" font-size="11.5" fill="#9fb3a8">A Mac menu bar app that makes a cheap Bluetooth LED bar follow</text><text class="t" x="22" y="242" font-size="11.5" fill="#9fb3a8">the screen, Hue-style. Reverse-engineered the light&#8217;s protocol,</text><text class="t" x="22" y="260" font-size="11.5" fill="#9fb3a8">calibrated LED colour by eye, shipped with a site and release.</text>
+<text class="t" x="22" y="224" font-size="10.8" fill="#9fb3a8">A Mac menu bar app that makes a cheap Bluetooth LED bar follow</text><text class="t" x="22" y="242" font-size="10.8" fill="#9fb3a8">the screen, Hue-style. Reverse-engineered the light&#8217;s protocol,</text><text class="t" x="22" y="260" font-size="10.8" fill="#9fb3a8">calibrated LED colour by eye, shipped with a site and release.</text>
 <line x1="22" y1="272" x2="498" y2="272" stroke="#10241a"/>
 <text class="t" x="22" y="291" font-size="10.5" fill="#00ff41" opacity=".85">&#8250; github.com/Mayukh-D/lantern</text>
 </svg>

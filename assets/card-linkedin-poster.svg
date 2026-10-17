@@ -35,7 +35,7 @@
     <path d="M368 104l16-18 12 12 10-7 12 13z" fill="#c9d4ff" opacity=".55"/>
   </g>
 </g></g>
-<text class="t" x="22" y="224" font-size="11.5" fill="#9fb3a8">Lets Claude post to LinkedIn with real photos, Page tags,</text><text class="t" x="22" y="242" font-size="11.5" fill="#9fb3a8">hashtags and reposts, via the official API. Waits for your yes.</text>
+<text class="t" x="22" y="224" font-size="10.8" fill="#9fb3a8">Lets Claude post to LinkedIn with real photos, Page tags,</text><text class="t" x="22" y="242" font-size="10.8" fill="#9fb3a8">hashtags and reposts, via the official API. Waits for your yes.</text>
 <line x1="22" y1="272" x2="498" y2="272" stroke="#10241a"/>
 <text class="t" x="22" y="291" font-size="10.5" fill="#00ff41" opacity=".85">&#8250; github.com/Mayukh-D/linkedin-poster-mcp</text>
 </svg>

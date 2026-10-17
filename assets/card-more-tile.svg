@@ -18,7 +18,7 @@
 <text class="t" x="40" y="150" font-size="10.5" fill="#d8e4dc">OpenMAIC/</text><text class="t" x="150" y="150" font-size="10" fill="#7d8f85">multi-agent interactive classroom</text>
 <text class="t" x="40" y="168" font-size="10.5" fill="#d8e4dc">i-have-adhd/</text><text class="t" x="150" y="168" font-size="10" fill="#7d8f85">stop coding agents burying the answer</text>
 <text class="t" x="40" y="188" font-size="11" fill="#00ff41">$ <tspan class="cur">&#9608;</tspan></text>
-<text class="t" x="22" y="224" font-size="11.5" fill="#9fb3a8">Projects I've forked to study, use or contribute to, plus</text><text class="t" x="22" y="242" font-size="11.5" fill="#9fb3a8">smaller experiments that didn't get a card of their own.</text>
+<text class="t" x="22" y="224" font-size="10.8" fill="#9fb3a8">Projects I've forked to study, use or contribute to, plus</text><text class="t" x="22" y="242" font-size="10.8" fill="#9fb3a8">smaller experiments that didn't get a card of their own.</text>
 <line x1="22" y1="272" x2="498" y2="272" stroke="#10241a"/>
 <text class="t" x="22" y="291" font-size="10.5" fill="#00ff41" opacity=".85">&#8250; github.com/Mayukh-D?tab=repositories</text>
 </svg>

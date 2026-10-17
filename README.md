@@ -46,62 +46,35 @@ aerodynamics rather than the racing.
 
 ## `~/work`
 
-<table>
-<tr><td width="50%">
+<p align="center">
+<a href="https://github.com/Mayukh-D/image-generation-with-machine-learning"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-flow-matching.svg?v=4" width="49%" alt="Flow Matching Parameterisation"></a>
+<a href="https://github.com/Mayukh-D/story-generation-nanoGPT"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-nanogpt.svg?v=4" width="49%" alt="Story Generation with nanoGPT"></a>
+</p>
 
-<a href="https://github.com/Mayukh-D/image-generation-with-machine-learning"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-flow-matching.svg?v=1" width="100%" alt="Flow Matching Parameterisation"></a>
+<p align="center">
+<a href="https://github.com/Mayukh-D/Deep-Learning-Transformers-Revenge"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-transformers-revenge.svg?v=4" width="49%" alt="Transformers' Revenge"></a>
+<a href="https://github.com/Mayukh-D/foodlens-ar-sustainable-shopping"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-foodlens.svg?v=4" width="49%" alt="FoodLens, a smart food scanner"></a>
+</p>
 
-</td><td width="50%">
+<p align="center">
+<a href="https://github.com/Mayukh-D/yuma-social-platform"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-yuma.svg?v=4" width="49%" alt="Yuma Social Platform"></a>
+<a href="https://github.com/Mayukh-D/hci-design-and-research"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-hci.svg?v=4" width="49%" alt="HCI Design and Research"></a>
+</p>
 
-<a href="https://github.com/Mayukh-D/story-generation-nanoGPT"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-nanogpt.svg?v=1" width="100%" alt="Story Generation with nanoGPT"></a>
+<p align="center">
+<a href="https://github.com/Mayukh-D/TokenEater"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-tokeneater.svg?v=4" width="49%" alt="TokenEater, multi-account fork"></a>
+<a href="https://github.com/Mayukh-D/linkedin-poster-mcp"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-linkedin-poster.svg?v=4" width="49%" alt="linkedin-poster-mcp: post to LinkedIn from Claude"></a>
+</p>
 
-</td></tr>
-<tr><td>
+<p align="center">
+<a href="https://github.com/Mayukh-D/lantern"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-lantern.svg?v=4" width="49%" alt="Lantern, screen sync for a cheap LED bar"></a>
+<a href="https://github.com/Mayukh-D/mayukh-d.github.io"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-website.svg?v=4" width="49%" alt="This website: designed by Mayukh in Canberra, assembled in Claude Code"></a>
+</p>
 
-<a href="https://github.com/Mayukh-D/Deep-Learning-Transformers-Revenge"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-transformers-revenge.svg?v=1" width="100%" alt="Transformers' Revenge"></a>
-
-</td><td>
-
-<a href="https://github.com/Mayukh-D/foodlens-ar-sustainable-shopping"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-foodlens.svg?v=1" width="100%" alt="FoodLens, a smart food scanner"></a>
-
-</td></tr>
-<tr><td>
-
-<a href="https://github.com/Mayukh-D/yuma-social-platform"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-yuma.svg?v=1" width="100%" alt="Yuma Social Platform"></a>
-
-</td><td>
-
-<a href="https://github.com/Mayukh-D/hci-design-and-research"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-hci.svg?v=1" width="100%" alt="HCI Design and Research"></a>
-
-</td></tr>
-<tr><td>
-
-<a href="https://github.com/Mayukh-D/TokenEater"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-tokeneater.svg?v=1" width="100%" alt="TokenEater, multi-account fork"></a>
-
-</td><td>
-
-<a href="https://github.com/Mayukh-D/linkedin-poster-mcp"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-linkedin-poster.svg?v=1" width="100%" alt="linkedin-poster-mcp: post to LinkedIn from Claude"></a>
-
-</td></tr>
-<tr><td>
-
-<a href="https://github.com/Mayukh-D/lantern"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-lantern.svg?v=1" width="100%" alt="Lantern, screen sync for a cheap LED bar"></a>
-
-</td><td>
-
-<a href="https://github.com/Mayukh-D/mayukh-d.github.io"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-website.svg?v=3" width="100%" alt="This website: designed by Mayukh in Canberra, assembled in Claude Code"></a>
-
-</td></tr>
-<tr><td>
-
-<a href="https://github.com/Mayukh-D/GrowthScope"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-growthscope.svg?v=1" width="100%" alt="GrowthScope, my first hackathon project"></a>
-
-</td><td>
-
-<a href="https://github.com/Mayukh-D?tab=repositories"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-more-tile.svg?v=2" width="100%" alt="More on GitHub"></a>
-
-</td></tr>
-</table>
+<p align="center">
+<a href="https://github.com/Mayukh-D/GrowthScope"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-growthscope.svg?v=4" width="49%" alt="GrowthScope, my first hackathon project"></a>
+<a href="https://github.com/Mayukh-D?tab=repositories"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-more-tile.svg?v=4" width="49%" alt="More on GitHub"></a>
+</p>
 
 
 Three Scopus-indexed publications across AI in materials science, electric propulsion for
