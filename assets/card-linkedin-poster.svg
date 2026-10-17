@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 306" width="520" height="306" role="img" aria-label="linkedin-poster-mcp, post to LinkedIn from Claude">
+<style>
+.t{font-family:ui-monospace,'JetBrains Mono','SF Mono',SFMono-Regular,Menlo,Consolas,monospace}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes pop{0%,82%{opacity:1;transform:none}88%{opacity:0;transform:translateY(6px)}96%,100%{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.cur,.post{animation:none}}
+.cur{animation:blink 1s steps(1) infinite}
+.post{animation:pop 6s ease-out infinite}
+</style>
+<rect x="1" y="1" width="518" height="304" rx="12" fill="#010203" stroke="#10241a"/>
+<rect x="1" y="1" width="518" height="3" rx="1.5" fill="#00ff41" opacity=".55"/>
+<rect x="22" y="20" width="34" height="34" rx="9" fill="#00ff41"/>
+<path d="M29 29l7 7-7 7" fill="none" stroke="#010203" stroke-width="3" stroke-linecap="square"/><rect x="39" y="42" width="10" height="3" fill="#010203"/>
+<text class="t" x="68" y="36" font-size="14.5" fill="#d8e4dc" font-weight="600">linkedin-poster-mcp &#183; Post from Claude</text>
+<text class="t" x="68" y="51" font-size="9" fill="#7d8f85" letter-spacing="1.1">PYTHON &#183; MCP &#183; LINKEDIN API</text>
+<rect x="22" y="68" width="476" height="132" rx="8" fill="#0a0f0c" stroke="#10241a"/>
+<clipPath id="c"><rect x="22" y="68" width="476" height="132" rx="8"/></clipPath>
+<g clip-path="url(#c)"><g transform="translate(22,68)">
+  <text class="t" x="18" y="30" font-size="11" fill="#00ff41">$ claude</text>
+  <text class="t" x="18" y="50" font-size="10" fill="#9fb3a8">&gt; post it with both photos,</text>
+  <text class="t" x="18" y="64" font-size="10" fill="#9fb3a8">  tag the Page</text>
+  <text class="t" x="18" y="86" font-size="9.5" fill="#7d8f85">  waiting for your yes</text>
+  <text class="t" x="18" y="108" font-size="11" fill="#00ff41">$ <tspan class="cur">&#9608;</tspan></text>
+  <g class="post">
+    <rect x="262" y="14" width="196" height="104" rx="6" fill="#f3f2ef"/>
+    <circle cx="276" cy="28" r="7" fill="#0a66c2"/>
+    <rect x="288" y="23" width="70" height="5" rx="2" fill="#38434f"/>
+    <rect x="288" y="31" width="44" height="4" rx="2" fill="#8c959f"/>
+    <rect x="270" y="42" width="180" height="4" rx="2" fill="#56687a"/>
+    <rect x="270" y="50" width="150" height="4" rx="2" fill="#56687a"/>
+    <rect x="270" y="58" width="60" height="4" rx="2" fill="#0a66c2"/>
+    <rect x="270" y="68" width="88" height="42" rx="3" fill="#2e4a3a"/>
+    <rect x="362" y="68" width="88" height="42" rx="3" fill="#3c5568"/>
+    <path d="M276 104l14-14 10 9 8-6 14 11z" fill="#00ff41" opacity=".55"/>
+    <path d="M368 104l16-18 12 12 10-7 12 13z" fill="#c9d4ff" opacity=".55"/>
+  </g>
+</g></g>
+<text class="t" x="22" y="224" font-size="11.5" fill="#9fb3a8">Lets Claude post to LinkedIn with real photos, Page tags,</text><text class="t" x="22" y="242" font-size="11.5" fill="#9fb3a8">hashtags and reposts, via the official API. Waits for your yes.</text>
+<line x1="22" y1="272" x2="498" y2="272" stroke="#10241a"/>
+<text class="t" x="22" y="291" font-size="10.5" fill="#00ff41" opacity=".85">&#8250; github.com/Mayukh-D/linkedin-poster-mcp</text>
+</svg>
