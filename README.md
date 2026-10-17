@@ -87,7 +87,7 @@ aerodynamics rather than the racing.
 
 <a href="https://github.com/Mayukh-D/linkedin-poster-mcp"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-linkedin-poster.svg?v=1" width="50%" alt="linkedin-poster-mcp: post to LinkedIn from Claude"></a>
 
-**tl;dr** Claude drafts, three simulated hiring managers critique, and it posts to LinkedIn with real photos and Page tags, only after you say yes. &nbsp;[**Install →**](https://github.com/Mayukh-D/linkedin-poster-mcp#setup-about-10-minutes) &nbsp;·&nbsp; [why I built it](https://mayukhdas.com/notes/post-from-the-terminal/)
+**tl;dr** Let Claude post to LinkedIn with real photos, Page tags, hashtags and reposts through the official API, only after you say yes. &nbsp;[**Install →**](https://github.com/Mayukh-D/linkedin-poster-mcp#setup-about-10-minutes) &nbsp;·&nbsp; [why I built it](https://mayukhdas.com/notes/post-from-the-terminal/)
 
 </td></tr>
 <tr><td>
