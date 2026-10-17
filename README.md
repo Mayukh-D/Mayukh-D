@@ -80,27 +80,29 @@ aerodynamics rather than the racing.
 
 </td><td>
 
-<a href="https://github.com/Mayukh-D/lantern"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-lantern.svg?v=1" width="100%" alt="Lantern, screen sync for a cheap LED bar"></a>
-
-</td></tr>
-<tr><td colspan="2" align="center">
-
-<a href="https://github.com/Mayukh-D/linkedin-poster-mcp"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-linkedin-poster.svg?v=1" width="50%" alt="linkedin-poster-mcp: post to LinkedIn from Claude"></a>
-
+<a href="https://github.com/Mayukh-D/linkedin-poster-mcp"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-linkedin-poster.svg?v=1" width="100%" alt="linkedin-poster-mcp: post to LinkedIn from Claude"></a>
 
 </td></tr>
 <tr><td>
 
-<a href="https://github.com/Mayukh-D/mayukh-d.github.io"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-website.svg?v=3" width="100%" alt="This website: designed by Mayukh in Canberra, assembled in Claude Code"></a>
+<a href="https://github.com/Mayukh-D/lantern"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-lantern.svg?v=1" width="100%" alt="Lantern, screen sync for a cheap LED bar"></a>
 
 </td><td>
 
+<a href="https://github.com/Mayukh-D/mayukh-d.github.io"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-website.svg?v=3" width="100%" alt="This website: designed by Mayukh in Canberra, assembled in Claude Code"></a>
+
+</td></tr>
+<tr><td>
+
 <a href="https://github.com/Mayukh-D/GrowthScope"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-growthscope.svg?v=1" width="100%" alt="GrowthScope, my first hackathon project"></a>
+
+</td><td>
+
+<a href="https://github.com/Mayukh-D?tab=repositories"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-more-tile.svg?v=1" width="100%" alt="More on GitHub"></a>
 
 </td></tr>
 </table>
 
-<p align="center"><a href="https://github.com/Mayukh-D?tab=repositories"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/4b5c44f/assets/card-more.svg" width="100%" alt="More on GitHub"></a></p>
 
 Three Scopus-indexed publications across AI in materials science, electric propulsion for
 fixed-wing aircraft, and blockchain, cited 57 times. Listed on
