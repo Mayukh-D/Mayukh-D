@@ -68,13 +68,15 @@ aerodynamics rather than the racing.
 
 <p align="center">
 <a href="https://github.com/Mayukh-D/lantern"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-lantern.svg?v=4" width="49%" alt="Lantern, screen sync for a cheap LED bar"></a>
-<a href="https://github.com/Mayukh-D/mayukh-d.github.io"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-website.svg?v=4" width="49%" alt="This website: designed by Mayukh in Canberra, assembled in Claude Code"></a>
+<a href="https://github.com/Mayukh-D/siteviews"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-siteviews.svg?v=4" width="49%" alt="SiteViews, total website views in the Mac menu bar"></a>
 </p>
 
 <p align="center">
+<a href="https://github.com/Mayukh-D/mayukh-d.github.io"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-website.svg?v=4" width="49%" alt="This website: designed by Mayukh in Canberra, assembled in Claude Code"></a>
 <a href="https://github.com/Mayukh-D/GrowthScope"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-growthscope.svg?v=4" width="49%" alt="GrowthScope, my first hackathon project"></a>
-<a href="https://github.com/Mayukh-D?tab=repositories"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-more-tile.svg?v=4" width="49%" alt="More on GitHub"></a>
 </p>
+
+<p align="center"><a href="https://github.com/Mayukh-D?tab=repositories"><b>More on GitHub →</b></a> &nbsp;experiments, forks and side projects</p>
 
 
 Three Scopus-indexed publications across AI in materials science, electric propulsion for
