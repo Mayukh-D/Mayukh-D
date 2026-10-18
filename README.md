@@ -76,7 +76,19 @@ aerodynamics rather than the racing.
 <a href="https://github.com/Mayukh-D/GrowthScope"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-growthscope.svg?v=4" width="49%" alt="GrowthScope, my first hackathon project"></a>
 </p>
 
-<p align="center"><a href="https://github.com/Mayukh-D?tab=repositories"><b>More on GitHub →</b></a> &nbsp;experiments, forks and side projects</p>
+<!--
+  "More on GitHub" comes in two versions. Keep exactly one active:
+  - EVEN number of project cards: use the wide bar (below the last row).
+  - ODD number of project cards: comment out the bar, and put the tile in the last row,
+    next to the last project card, so every row has two.
+-->
+<p align="center">
+<a href="https://github.com/Mayukh-D?tab=repositories"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-more-bar.svg?v=1" width="98.4%" alt="More on GitHub: experiments, forks and side projects"></a>
+</p>
+
+<!-- ODD count: move this into the last row (and comment out the bar above)
+<a href="https://github.com/Mayukh-D?tab=repositories"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-more-tile.svg?v=4" width="49%" alt="More on GitHub"></a>
+-->
 
 
 Three Scopus-indexed publications across AI in materials science, electric propulsion for
