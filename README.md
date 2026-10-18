@@ -19,7 +19,7 @@ follow what the system did and why.
 Right now I'm at **Eccoi** as a System Architect Intern on **SAICOP**, their
 Sovereign AI Community of Practice: architectural principles, system context modelling, platform
 assessment, and proving a conceptual architecture end to end against Australian Government
-delivery, security, and procurement realities.
+delivery, security, and procurement realities. ▶ [Watch my internship pitch](https://youtu.be/vkHVOC0f_R8)
 
 Alongside that I'm finishing a **Master of Computing at the ANU**, where I also **teach
 Human-Computer Interaction** as a Casual Sessional Academic, and represent the postgraduate
