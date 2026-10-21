@@ -62,7 +62,7 @@ aerodynamics rather than the racing.
 </p>
 
 <p align="center">
-<a href="https://github.com/Mayukh-D/TokenEater"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-tokeneater.svg?v=4" width="49%" alt="TokenEater, multi-account fork"></a>
+<a href="https://github.com/AThevon/TokenEater/pull/284"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-tokeneater.svg?v=5" width="49%" alt="TokenEater, multi-account support I built, upstream in TokenEater 6.1"></a>
 <a href="https://github.com/Mayukh-D/linkedin-poster-mcp"><img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/card-linkedin-poster.svg?v=4" width="49%" alt="linkedin-poster-mcp: post to LinkedIn from Claude"></a>
 </p>
 
