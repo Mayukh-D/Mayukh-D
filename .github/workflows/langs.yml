@@ -2,7 +2,7 @@ name: refresh language panel
 
 on:
   schedule:
-    - cron: "17 4 * * 1"   # Mondays, 04:17 UTC
+    - cron: "17 22 * * *"   # daily, 22:17 UTC (after the site's Scholar refresh at 21:41)
   workflow_dispatch:
   push:
     paths:
@@ -34,7 +34,8 @@ jobs:
 
       - name: Commit if changed
         run: |
-          if git diff --quiet -- assets/langs.svg assets/metrics.svg; then
+          # The panels carry today's date, so ignore a change to that line alone.
+          if [ -z "$(git diff -U0 -- assets/langs.svg assets/metrics.svg | grep '^[+-][^+-]' | grep -v 'updated ')" ]; then
             echo "no change"
             exit 0
           fi
