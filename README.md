@@ -116,7 +116,7 @@ fixed-wing aircraft, and blockchain, cited 57 times. Listed on
 
 ## `~/stats`
 
-<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/metrics.svg" width="100%" alt="Metrics: 3+ years in industry, 5 roles held, 3 internships, 1 course taught, 3 peer-reviewed papers, 57 citations, plus live counts of public projects and contributions">
+<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/metrics.svg" width="100%" alt="Metrics: 3+ years in industry, 5 roles held, 3 internships, 1 course taught, 3 peer-reviewed papers, 58 citations, plus live counts of public projects and contributions">
 
 <img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/langs.svg" width="100%" alt="Language mix across my public repositories">
 

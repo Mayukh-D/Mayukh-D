@@ -2,7 +2,8 @@
 """Render assets/metrics.svg: a panel of career and GitHub numbers, in the portfolio palette.
 
 The career numbers are facts that only change when I do something, so they live here as
-constants. The two GitHub numbers are read live from the GraphQL API. Run locally with `gh`
+constants. The two GitHub numbers are read live from the GraphQL API, and the citations
+from the Scholar numbers the portfolio site keeps (assets/scholar.json there). Run locally with `gh`
 authenticated, or in Actions with GITHUB_TOKEN; refreshed weekly by .github/workflows/langs.yml.
 """
 
@@ -14,6 +15,7 @@ import sys
 import urllib.request
 
 USER = "Mayukh-D"
+SCHOLAR = "https://raw.githubusercontent.com/Mayukh-D/mayukh-d.github.io/main/assets/scholar.json"
 
 # (value, label, detail). Update by hand when one of these changes.
 CAREER = [
@@ -22,7 +24,6 @@ CAREER = [
     ("3", "internships", "Ashok Leyland and two more"),
     ("1", "course taught", "HCI at the ANU"),
     ("3", "peer-reviewed papers", "1 as first author"),
-    ("57", "citations", "h-index 3 · Scholar, Oct 2026"),
 ]
 
 BG, BG_SOFT = "#010203", "#0a0f0c"
@@ -53,12 +54,23 @@ def fetch():
             user["contributionsCollection"]["contributionCalendar"]["totalContributions"])
 
 
+def scholar():
+    """The citations tile, from the site's Scholar numbers; the last known ones if unreachable."""
+    try:
+        with urllib.request.urlopen(SCHOLAR, timeout=30) as r:
+            s = json.load(r)
+        when = dt.date.fromisoformat(s["as_of"]).strftime("%b %Y")
+        return (str(s["citations"]), "citations", f"h-index {s['h_index']} · Scholar, {when}")
+    except Exception:
+        return ("58", "citations", "h-index 3 · Scholar, Oct 2026")
+
+
 def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace("·", "&#183;")
 
 
 def render(repos, contributions):
-    tiles = CAREER + [
+    tiles = CAREER + [scholar()] + [
         (str(repos), "public projects", "built and kept in the open"),
         (str(contributions), "contributions", "in the last 12 months"),
     ]
@@ -77,7 +89,7 @@ def render(repos, contributions):
         f'<rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="10" fill="{BG}" stroke="{BORDER}"/>',
         f'<text class="t" x="26" y="34" font-size="14" fill="{GREEN}">mayukh@github<tspan fill="{BORDER_HI}">:~$</tspan> '
         f'<tspan fill="{TEXT}">./metrics --all</tspan></text>',
-        f'<text class="t" x="26" y="56" font-size="11.5" fill="{MUTED}">career by hand &#183; GitHub numbers live &#183; updated {today}</text>',
+        f'<text class="t" x="26" y="56" font-size="11.5" fill="{MUTED}">career by hand &#183; Scholar and GitHub numbers live &#183; updated {today}</text>',
     ]
     for i, (value, name, detail) in enumerate(tiles):
         x = x0 + (i % cols) * (tw + gap)
