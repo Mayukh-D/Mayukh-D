@@ -32,6 +32,24 @@ aerodynamics rather than the racing.
 
 <img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/divider.svg" width="100%" alt="">
 
+## `~/industry`
+
+**Accenture** · Advanced Application Engineering Analyst · Bengaluru · Jan 2022 – Feb 2025
+- Built **Ingrain**, an AIOps tool that generates predictive ML pipelines for automated IT
+  ticket resolution, with explainable AI and live model-performance reporting.
+- Built **Quasar++**, a chatbot for querying internal documents through the ChatGPT API.
+- Production backend and data work: MERN stack services, MLOps pipelines, and a data
+  engineering stack of Hadoop, PySpark and Cassandra.
+
+**Cognizant** · Programmer Analyst · India · Oct 2021 – Jan 2022
+- Full-stack .NET MVC systems with React front ends and SQL Server, including a Hospital
+  Logistics System for COVID-19 operational workflows.
+
+<sub>The repos here are mostly ML and research; the production backend side lives in the
+work above.</sub>
+
+<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/divider.svg" width="100%" alt="">
+
 ## `~/stack`
 
 `modelling` &nbsp; ![PyTorch](https://img.shields.io/badge/PyTorch-0a0f0c?style=flat-square&logo=pytorch&logoColor=00ff41) ![Python](https://img.shields.io/badge/Python-0a0f0c?style=flat-square&logo=python&logoColor=00ff41) ![NumPy](https://img.shields.io/badge/NumPy-0a0f0c?style=flat-square&logo=numpy&logoColor=00ff41) ![Pandas](https://img.shields.io/badge/Pandas-0a0f0c?style=flat-square&logo=pandas&logoColor=00ff41) ![scikit-learn](https://img.shields.io/badge/scikit--learn-0a0f0c?style=flat-square&logo=scikitlearn&logoColor=00ff41)
