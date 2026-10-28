@@ -32,7 +32,7 @@ PS1    = ":~$ "
 LINES = [
     ("cmd", [("whoami", TEXT)]),
     ("out", [("Mayukh Das ", TEXT), (":: ", BORDER_HI),
-             ("System Architect Intern ", CYAN), ("@ Eccoi", GREEN)]),
+             ("Trainee ML Architect and System Engineer ", CYAN), ("@ Eccoi", GREEN)]),
     ("out", [("Master of Computing @ ", MUTED), ("ANU", GREEN),
              ("  ·  ex-Accenture, 3+ yrs", MUTED)]),
     ("gap", []),
@@ -136,7 +136,7 @@ def build():
 
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
            f'width="{W}" height="{H}" role="img" '
-           f'aria-label="Terminal: Mayukh Das, System Architect Intern at Eccoi, '
+           f'aria-label="Terminal: Mayukh Das, Trainee ML Architect and System Engineer at Eccoi, '
            f'Master of Computing at ANU, ex-Accenture.">'
            f'<style>{"".join(css)}</style>{"".join(body)}</svg>')
     return svg

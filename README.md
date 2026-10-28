@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/header.svg" width="100%" alt="Mayukh Das: System Architect Intern at Eccoi, Master of Computing at ANU, ex-Accenture">
+  <img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/header.svg" width="100%" alt="Mayukh Das: Trainee ML Architect and System Engineer at Eccoi, Master of Computing at ANU, ex-Accenture">
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 I build machine learning systems, and I care about the part where a human can actually
 follow what the system did and why.
 
-Right now I'm at **Eccoi** as a System Architect Intern on **SAICOP**, their
+Right now I'm at **Eccoi** as a Trainee ML Architect and System Engineer on **SAICOP**, their
 Sovereign AI Community of Practice: architectural principles, system context modelling, platform
 assessment, and proving a conceptual architecture end to end against Australian Government
 delivery, security, and procurement realities. ▶ [Watch my internship pitch](https://youtu.be/vkHVOC0f_R8)
@@ -34,7 +34,7 @@ aerodynamics rather than the racing.
 
 ## `~/industry`
 
-<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/industry.svg?v=1" width="100%" alt="Industry experience. Accenture, Advanced Application Engineering Analyst, Bengaluru, Jan 2022 to Feb 2025: built Ingrain, an AIOps tool generating predictive ML pipelines for IT ticket resolution with explainable AI; built Quasar++, a ChatGPT API chatbot over internal documents; production backend and data work with MERN, MLOps, Hadoop, PySpark and Cassandra. Cognizant, Programmer Analyst, India, Oct 2021 to Jan 2022: full-stack .NET MVC systems with React and SQL Server, including a COVID-19 Hospital Logistics System.">
+<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/industry.svg?v=2" width="100%" alt="Industry experience. Accenture, Advanced Application Engineering Analyst, Bengaluru, Jan 2022 to Feb 2025: built Ingrain, an AIOps tool generating predictive ML pipelines for IT ticket resolution with explainable AI; built Quasar++, a ChatGPT API chatbot over internal documents; production backend and data work with MERN, MLOps, Hadoop, PySpark and Cassandra. Cognizant, Programmer Analyst, India, Oct 2021 to Jan 2022: full-stack .NET MVC systems with React and SQL Server, including a COVID-19 Hospital Logistics System.">
 
 <img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/divider.svg" width="100%" alt="">
 
