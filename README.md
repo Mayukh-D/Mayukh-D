@@ -34,19 +34,7 @@ aerodynamics rather than the racing.
 
 ## `~/industry`
 
-**Accenture** · Advanced Application Engineering Analyst · Bengaluru · Jan 2022 – Feb 2025
-- Built **Ingrain**, an AIOps tool that generates predictive ML pipelines for automated IT
-  ticket resolution, with explainable AI and live model-performance reporting.
-- Built **Quasar++**, a chatbot for querying internal documents through the ChatGPT API.
-- Production backend and data work: MERN stack services, MLOps pipelines, and a data
-  engineering stack of Hadoop, PySpark and Cassandra.
-
-**Cognizant** · Programmer Analyst · India · Oct 2021 – Jan 2022
-- Full-stack .NET MVC systems with React front ends and SQL Server, including a Hospital
-  Logistics System for COVID-19 operational workflows.
-
-<sub>The repos here are mostly ML and research; the production backend side lives in the
-work above.</sub>
+<img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/industry.svg?v=1" width="100%" alt="Industry experience. Accenture, Advanced Application Engineering Analyst, Bengaluru, Jan 2022 to Feb 2025: built Ingrain, an AIOps tool generating predictive ML pipelines for IT ticket resolution with explainable AI; built Quasar++, a ChatGPT API chatbot over internal documents; production backend and data work with MERN, MLOps, Hadoop, PySpark and Cassandra. Cognizant, Programmer Analyst, India, Oct 2021 to Jan 2022: full-stack .NET MVC systems with React and SQL Server, including a COVID-19 Hospital Logistics System.">
 
 <img src="https://raw.githubusercontent.com/Mayukh-D/Mayukh-D/main/assets/divider.svg" width="100%" alt="">
 

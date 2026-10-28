@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 486" width="1020" height="486" role="img" aria-label="Industry experience: Accenture, Advanced Application Engineering Analyst, Jan 2022 to Feb 2025; Cognizant, Programmer Analyst, Oct 2021 to Jan 2022">
+<style>.t{font-family:ui-monospace,'JetBrains Mono','SF Mono',SFMono-Regular,Menlo,Consolas,monospace}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}.card{animation:rise .5s ease-out both}@keyframes ping{0%{r:6;opacity:.7}100%{r:16;opacity:0}}.ping{animation:ping 2.4s ease-out infinite}@keyframes draw{from{stroke-dashoffset:300}to{stroke-dashoffset:0}}.rail{stroke-dasharray:300;animation:draw 1.2s ease-out both}</style>
+<rect x="1" y="1" width="1018" height="484" rx="10" fill="#010203" stroke="#10241a"/>
+<text class="t" x="26" y="34" font-size="14" fill="#00ff41">mayukh@github<tspan fill="#1d4a2f">:~$</tspan> <tspan fill="#d8e4dc">./experience --industry</tspan></text>
+<text class="t" x="26" y="56" font-size="11.5" fill="#7d8f85">3+ years of production systems &#183; 2 companies &#183; 2021 &#8594; 2025</text>
+<line class="rail" x1="44" y1="101" x2="44" y2="319" stroke="url(#rg)" stroke-width="2"/>
+<defs><linearGradient id="rg" gradientUnits="userSpaceOnUse" x1="44" y1="101" x2="44" y2="319"><stop offset="0" stop-color="#00ff41"/><stop offset="1" stop-color="#00e5ff"/></linearGradient></defs>
+<circle class="ping" cx="44" cy="101" r="6" fill="none" stroke="#00ff41" stroke-width="1.5"/>
+<circle cx="44" cy="101" r="6" fill="#00ff41"/><circle cx="44" cy="319" r="6" fill="#00e5ff"/>
+<g class="card"><rect x="64" y="78" width="930" height="202" rx="8" fill="#0a0f0c" stroke="#1d4a2f"/>
+<rect x="64" y="78" width="3" height="202" rx="1.5" fill="#00ff41"/>
+<text class="t" x="84" y="106" font-size="18" font-weight="700" fill="#00ff41">Accenture</text>
+<text class="t" x="974" y="106" font-size="12" fill="#00ff41" text-anchor="end">Jan 2022 &#8211; Feb 2025</text>
+<text class="t" x="84" y="126" font-size="10" fill="#7d8f85" letter-spacing="1.1">ADVANCED APPLICATION ENGINEERING ANALYST &#183; BENGALURU</text>
+<text class="t" x="84" y="154" font-size="12" fill="#00ff41">&#8250;</text><text class="t" x="100" y="154" font-size="12" fill="#d8e4dc">Built <tspan fill="#00ff41" font-weight="700">Ingrain</tspan>, an AIOps tool that generates predictive ML pipelines for automated IT ticket resolution,</text>
+<text class="t" x="100" y="170" font-size="12" fill="#d8e4dc">with explainable AI and live model-performance reporting.</text>
+<text class="t" x="84" y="194" font-size="12" fill="#00ff41">&#8250;</text><text class="t" x="100" y="194" font-size="12" fill="#d8e4dc">Built <tspan fill="#00ff41" font-weight="700">Quasar++</tspan>, a chatbot for querying internal documents through the ChatGPT API.</text>
+<text class="t" x="84" y="218" font-size="12" fill="#00ff41">&#8250;</text><text class="t" x="100" y="218" font-size="12" fill="#d8e4dc">Production backend and data work: MERN stack services, MLOps pipelines, and a data</text>
+<text class="t" x="100" y="234" font-size="12" fill="#d8e4dc">engineering stack of Hadoop, PySpark and Cassandra.</text>
+<rect x="84" y="248" width="43" height="20" rx="4" fill="#010203" stroke="#1d4a2f"/><text class="t" x="106" y="262" font-size="10.5" fill="#00ff41" text-anchor="middle">MERN</text><rect x="135.4" y="248" width="50" height="20" rx="4" fill="#010203" stroke="#1d4a2f"/><text class="t" x="160" y="262" font-size="10.5" fill="#00ff41" text-anchor="middle">MLOps</text><rect x="193.15" y="248" width="56" height="20" rx="4" fill="#010203" stroke="#1d4a2f"/><text class="t" x="221" y="262" font-size="10.5" fill="#00ff41" text-anchor="middle">Hadoop</text><rect x="257.25" y="248" width="62" height="20" rx="4" fill="#010203" stroke="#1d4a2f"/><text class="t" x="288" y="262" font-size="10.5" fill="#00ff41" text-anchor="middle">PySpark</text><rect x="327.7" y="248" width="75" height="20" rx="4" fill="#010203" stroke="#1d4a2f"/><text class="t" x="365" y="262" font-size="10.5" fill="#00ff41" text-anchor="middle">Cassandra</text><rect x="410.85" y="248" width="107" height="20" rx="4" fill="#010203" stroke="#1d4a2f"/><text class="t" x="464" y="262" font-size="10.5" fill="#00ff41" text-anchor="middle">Explainable AI</text><rect x="525.75" y="248" width="88" height="20" rx="4" fill="#010203" stroke="#1d4a2f"/><text class="t" x="570" y="262" font-size="10.5" fill="#00ff41" text-anchor="middle">ChatGPT API</text>
+</g>
+<g class="card" style="animation-delay:.12s"><rect x="64" y="296" width="930" height="134" rx="8" fill="#0a0f0c" stroke="#123a40"/>
+<rect x="64" y="296" width="3" height="134" rx="1.5" fill="#00e5ff"/>
+<text class="t" x="84" y="324" font-size="18" font-weight="700" fill="#00e5ff">Cognizant</text>
+<text class="t" x="974" y="324" font-size="12" fill="#00e5ff" text-anchor="end">Oct 2021 &#8211; Jan 2022</text>
+<text class="t" x="84" y="344" font-size="10" fill="#7d8f85" letter-spacing="1.1">PROGRAMMER ANALYST &#183; INDIA</text>
+<text class="t" x="84" y="372" font-size="12" fill="#00e5ff">&#8250;</text><text class="t" x="100" y="372" font-size="12" fill="#d8e4dc">Full-stack .NET MVC systems with React front ends and SQL Server, including a Hospital Logistics</text>
+<text class="t" x="100" y="388" font-size="12" fill="#d8e4dc">System for COVID-19 operational workflows.</text>
+<rect x="84" y="400" width="69" height="20" rx="4" fill="#010203" stroke="#123a40"/><text class="t" x="118" y="414" font-size="10.5" fill="#00e5ff" text-anchor="middle">.NET MVC</text><rect x="160.8" y="400" width="50" height="20" rx="4" fill="#010203" stroke="#123a40"/><text class="t" x="186" y="414" font-size="10.5" fill="#00e5ff" text-anchor="middle">React</text><rect x="218.55" y="400" width="82" height="20" rx="4" fill="#010203" stroke="#123a40"/><text class="t" x="259" y="414" font-size="10.5" fill="#00e5ff" text-anchor="middle">SQL Server</text>
+</g>
+<text class="t" x="26" y="464" font-size="11" fill="#7d8f85"># the repos here are mostly ML and research; the production backend side lives in the work above.</text>
+</svg>
